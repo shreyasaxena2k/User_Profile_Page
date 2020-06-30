@@ -15,6 +15,7 @@ body{
 .form-inline{
     margin-left: 60px;
 }
+
 .navbar-brand{
     font-size: 30px;
     font-weight: 800;
@@ -22,14 +23,36 @@ body{
 .navbar-nav{
     margin: auto;
 }
-.nav-link{
+.navbar-nav li{
     font-size: 20px;
 }
 
 .first{
     display: flex;
 }
-.pic img{
+.separator{
+    color: #c0c0c0;
+line-height: 1.4em;
+margin: 30px auto;
+overflow: hidden;
+text-align: center;
+width: 100%;
+}  
+.separator::before, .separator::after {
+    border-bottom: 2px solid #eeeeee;
+    content: "";
+    display: inline-block;
+    height: .65em;
+    margin: 0 -4px 0 -100%;
+    vertical-align: top;
+    width: 50%
+}
+.fa-cog:before {
+    content: "\f013";
+    
+}
+
+.img-box img{
     width: 300px;
     margin: 35px;
 }
@@ -73,28 +96,20 @@ body{
 .info{
     display: flex;
 }
-.info-part{
-    margin: 10px;
-    outline: none;
-    border-radius: 5px;
-    border: none;
-    padding: 0 10px;
-}
-.info-part:hover{
-    background-color: rgb(175, 212, 235);
+.btn{
+    padding: 3px 9px;
 }
 .main-sec{
      display: grid;
      grid-template-columns: repeat(2,555px);
 }
-.head{
+.heading{
     margin: 48px 8px;
     color: cadetblue;
     font-size: 15px;
 }
-.head1{
-    margin-top: 48px;
-    margin-left: 126px;
+.second{
+    /* padding: 20px; */
 }
 .second h2{
     font-size: 30px;
@@ -102,7 +117,7 @@ body{
 }
 .btn{
     float: right;
-    margin-right: 68px;
+    margin-right: 220px;
     border-radius: 5px;
     outline: lightskyblue;
 }
@@ -113,7 +128,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 300px;
-    margin: auto;
+    margin: 0;
 }
 .fourth ul {
     list-style-type: none;
