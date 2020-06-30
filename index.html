@@ -14,13 +14,13 @@
 </head>
 
 <body>
+<header class="header">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Kodecolor</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active mx-5">
@@ -33,18 +33,17 @@
                     <a class="nav-link" href="#">My Contacts</a>
                 </li>
             </ul>
-
         </div>
         <form class="form-inline my-4 mx-6 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search mx-5">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
     </nav>
-
+</header>
 
     <div class="container">
         <section class="first">
-            <div class="pic">
+            <div class="img-box">
                 <img src="pic1.webp" alt="pic">
             </div>
             <div class="box">
@@ -57,46 +56,67 @@
                 <div class="ranking">
                     <p>Ranking</p>
                     5
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
+                    <a class="icon  icon-bordered icon-circled icon-border-effect effect-circle" href="#">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+
+                    </a>
                 </div>
                 <div class="info">
-                    <button class="info-part"><span class="glyphicon glyphicon-envelope mx-2"></span>Send Message</button>
-                    <button  class="info-part" >Contacts</button>
-                    <button  class="info-part">Report User</button>
+                    <a href="#" class="btn btn-default mx-2 btn-circled btn-sm "><span
+                            class="glyphicon glyphicon-envelope my-2 mx-2"></span>Send Message</a>
+                    <a href="#" class="btn btn-default mx-2 btn-circled btn-sm hvr-bounce-out">Contact</a>
+                    <a href="#" class="btn btn-default  mx-2 btn-circled btn-sm hvr-bounce-out">Report User</a>
                 </div>
             </div>
         </section>
         <section class="main-sec">
-            <section class="second">
-                <p class="head">WORK</p>
+            <section class="second ">
+                <div class="separator mx-4">
+                    <i class="fa fa-cog fa-spin"></i>
+                  </div>
+                <p class="heading">WORK</p>
                 <h2>Spotify New York</h2>
-                <button class="btn btn-primary">Primary</button>
+                <a href="#" class="btn btn-default btn-circled btn-sm ">Primary</a>
                 <p>170 William Street<br>
-                New York, NY </p>
+                    New York, NY </p>
                 <h2>Metropolitian Museum</h2>
-                <button class="btn btn-primary">Secondary</button>
+                <a href="#" class="btn btn-default btn-circled btn-sm ">Secondary</a>
                 <p>25 E 68th Street<br>
-                New York, NY </p>
+                    New York, NY </p>
             </section>
-            <section class="third">
-                <p class="head head1" >CONTACT INFORMATION</p>
-                <form action="" class="form">
-                    <label for="number" class="contact-info">Phone:</label>
-                    <input type="number" name="number" >
-                    <label for="address" class="contact-info">Address:</label>
-                    <input type="text" name="address">
-                    <label for="email" class="contact-info">E-mail:</label>
-                    <input type="email" name="email">
-                    <label for="site" class="contact-info">Site:</label>
-                    <input type="email" name="site">
+            <section class="third ">
+                <div class="separator mx-5">
+                    <i class="fa fa-cog fa-spin"></i>
+                  </div>
+                <p class="heading">CONTACT INFORMATION</p>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="exampleInputPhone2">Phone</label>
+                        <input type="number" class="form-control" id="exampleInputEmail2" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputAddress2">Address</label>
+                        <input type="text" class="form-control" id="exampleInputEmail2" placeholder="Address">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail2">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputSite2">Site</label>
+                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Site">
+                    </div>
                 </form>
             </section>
             <section class="fourth">
-                <p class="head ">SKILLS</p>
+                <div class="separator mx-4">
+                    <i class="fa fa-cog fa-spin"></i>
+                  </div>
+                <p class="heading ">SKILLS</p>
                 <ul>
                     <li>Branding</li>
                     <li>UI/UX</li>
@@ -106,30 +126,18 @@
                 </ul>
             </section>
             <section class="fifth">
-                <p class="head head1">BASIC INFORMATION</p>
+                <div class="separator mx-4">
+                    <i class="fa fa-cog fa-spin "></i>
+                  </div>
+                <p class="heading ">BASIC INFORMATION</p>
                 <ul>
-                    <li>Birthday:   </li>
+                    <li>Birthday: </li>
                     <li>Gender:</li>
                 </ul>
             </section>
         </section>
     </div>
 
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
